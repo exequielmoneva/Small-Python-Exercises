@@ -4,20 +4,15 @@ Tener en cuenta que los caracteres de la subcadena no necesariamente deben estar
 pero sí respetando el orden de los mismos."""
 
 cad=input("Ingrese la cadena: ")
-#cad=cad.lower()
-cad2=list(cad.lower())
+cad=cad.lower()
 p=input("Ingrese la palabra a buscar: ")
-#n=p.lower()
 n=list(p.lower())
 pos=0
-#au=0
 w=""
 i=0
-#while (pos!=len(p)):
 while (pos!=len(cad)):
     res=cad.find(n[i],pos)
     if(res==-1):
-            #pos==len(p)
         break
     else:
         w+=cad[res]
